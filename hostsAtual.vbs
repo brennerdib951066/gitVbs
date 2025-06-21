@@ -6,7 +6,7 @@ Dim caminhoScript
 caminhoScript = shell.ExpandEnvironmentStrings("%USERPROFILE%\Desktop\powershell\atualizarHosts.ps1")
 
 ' Comando para executar o script PowerShell em segundo plano
-shell.Run "powershell.exe -ExecutionPolicy Bypass -File """ & caminhoScript & """", 0, False
+shell.Run "pwsh -ExecutionPolicy Bypass -File """ & caminhoScript & """", 0, False
 
 ' Limpeza
 Set shell = Nothing
